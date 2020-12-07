@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculatrice version 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <script src="./jquerry.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script type="text/javascript" src="./calculatriceGuy2.0.js"></script>
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./calc.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container" id="formContainer">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark fixed-top backgroudNav"
+          id="mainNav"
+        >
+          <a class="navbar-brand" href="#">
+            <img src="./images.jpeg" width="200px" height="50px" />
+          </a>
+          <button
+            class="navbar-toggler navbar-toggler-right menuBarSmall"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav navbar-nav text-uppercase ml-auto">
+              <div class="dropdown dropdownHome">
+                <button type="button" class="btn btn-primary menuBarSite">
+                  Home
+                </button>
+              </div>
+              <div class="dropdown">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-toggle menuBarSite"
+                  data-toggle="dropdown"
+                >
+                  Page 1
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-toggle menuBarSite"
+                  data-toggle="dropdown"
+                >
+                  Page 2
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="input-group mb-3 dropdown">
+                <input type="text" class="form-control" placeholder="Search" />
+                <div class="input-group-append">
+                  <button class="btn btn-success" type="submit">Go</button>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <aside>
+      <h2>CALCULATRICE</h2>
+      <div class="container">
+        <div class="row">
+          <div class="contenu">
+            <textarea class="monitorCalc" rows="3" cols="17"> </textarea>
+            <button
+              class="btn btn-primary tailleButton"
+              id="1"
+              onclick="getValueButtons(1)"
+            >
+              1
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="2"
+              onclick="getValueButtons(2)"
+            >
+              2
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="3"
+              onclick="getValueButtons(3)"
+            >
+              3
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="4"
+              onclick="getValueButtons(4)"
+            >
+              4
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="5"
+              onclick="getValueButtons(5)"
+            >
+              5
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="6"
+              onclick="getValueButtons(6)"
+            >
+              6
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="7"
+              onclick="getValueButtons(7)"
+            >
+              7
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="8"
+              onclick="getValueButtons(8)"
+            >
+              8
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="9"
+              onclick="getValueButtons(9)"
+            >
+              9
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="0"
+              onclick="getValueButtons(0)"
+            >
+              0
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="addition"
+              onclick="getValueButtons('+')"
+            >
+              +
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="soustraction"
+              onclick="getValueButtons('-')"
+            >
+              -
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="multiplication"
+              onclick="getValueButtons('*')"
+            >
+              x
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="division"
+              onclick="getValueButtons('/')"
+            >
+              /
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="equal"
+              onclick="calculEr()"
+            >
+              =
+            </button>
+            <button
+              class="btn btn-primary tailleButton"
+              id="0"
+              onclick="reinits()"
+            >
+              C
+            </button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

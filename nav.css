@@ -1,0 +1,20 @@
+/* Debut css pour la navigation*/
+.backgroudNav {
+    background-color: #7FFCED;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+}
+.dropdown, .dropdownHome {
+    margin: 1%;			
+}
+.menuBarSite {
+    width: 180px;	
+    background-color: #04A1E0;	
+    border: 2px solid #04A1E0;			
+}
+.navbar-nav {
+    width: 100%;
+}
+/* Fin css pour la navigation */
